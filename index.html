@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="happybirtday.css" />
+    <title>Happy Anniversary</title>
+  </head>
+  <body>
+    <!-- Tiktok meowish -->
+    <canvas id="c"></canvas>
+
+    <!-- Button that triggers the message -->
+    <button id="showMessageButton">คนที่ไม่ใช่เบบี๋ห้ามกดปุ่มนี้!!</button>
+
+    <!-- Placeholder for popup message -->
+    <p id="popupMessage" style="display: none;"></p>
+
+
+
+    <script src="happybirtday.js"></script>
+
+    <script>
+      // JavaScript to handle button click and display popup message
+      document.getElementById('showMessageButton').addEventListener('click', function() {
+        // Show the popup message
+        document.getElementById('popupMessage').innerText = "เค้ารักเบบี๋นะค้าบบ สุขสันต์วันครบรอบ3เดือนน้าา เค้าอาจจะไม่มีของขวัญอะไรให้แต่เค้าสัญญาว่าเค้าจะรักเบบี๋ตลอดไปเลยนะค้าบบ จุ๊ฟมั่วววววว";
+        document.getElementById('popupMessage').style.display = 'block';
+        
+        // Hide the button after click
+        this.style.display = 'none';
+      });
+    </script>
+  </body>
+</html>
